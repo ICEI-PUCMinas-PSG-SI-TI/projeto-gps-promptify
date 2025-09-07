@@ -9,8 +9,7 @@
 ## Alunos integrantes da equipe
 
 * [Alexandre Versiani Raposo](https://github.com/LexVRaps)
-* [Nome completo do aluno 2 (com link para Github)](https://github.com/aluno2)
-* [Nome completo do aluno 3 (com link para Github)](https://github.com/aluno3)
+* [Guilherme Meireles Farias)](https://github.com/guimfarias)
 * [Nome completo do aluno 4 (com link para Github)](https://github.com/aluno4)
 * [Nome completo do aluno 5 (com link para Github)](https://github.com/aluno5)
 
