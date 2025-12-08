@@ -1,0 +1,26 @@
+# Arquivos temporários do sistema
+*.log
+*.tmp
+*.temp
+
+# Arquivos de texto que podem ser criados
+compilando.txt
+compilado.txt
+verificando.txt
+output.txt
+debug.txt
+
+# Arquivos do Maven
+target/
+*.jar
+
+# Executáveis baixados
+yt-dlp.exe
+
+# Arquivos .bat gerados (exceto os principais)
+play_music.bat
+
+# Arquivos do VSCode
+.vscode/
+.DS_Store
+Thumbs.db
