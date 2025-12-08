@@ -1,6 +1,6 @@
 ![ICEI](images/icei-pucminas.png)
 
-# 🚗 Promptify - Player de música no terminal
+# 🎶🔊 Promptify - Player de música no terminal
 ---
 ## Alunos integrantes da equipe
 
@@ -27,9 +27,6 @@ Fases do Gerenciamento do Projeto:
 4. [Monitoramento](docs/04-monitoramento)
 5. [Encerramento](docs/05-encerramento)
 
-## Apresentação do Trabalho
-
-
 
 ## Informações Adicionais
 
@@ -38,13 +35,6 @@ Fases do Gerenciamento do Projeto:
 * Java JDK 8 ou superior
 * VLC Instaldo 
 * Maven Intalado 
-
-PROMPTFY/
-├── executar.bat     # ⬅️ Execute ESTE arquivo!
-├── matar_vlc.bat    # Para forçar parada
-├── ajuda.bat        # Ajuda rápida
-└── (outros arquivos gerados automaticamente)
-
 ---
 
 ### ▶️ Executar Primeira Vez:
