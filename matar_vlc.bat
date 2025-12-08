@@ -5,5 +5,5 @@ taskkill /F /IM vlc.exe >nul 2>&1
 taskkill /F /IM yt-dlp.exe >nul 2>&1
 echo > Todos processos encerrados
 echo.
-echo Dica: Execute .\executar.bat para reiniciar
+echo Dica: Execute .\executar.bat para reiniciar 
 pause

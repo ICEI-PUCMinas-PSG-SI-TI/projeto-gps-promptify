@@ -1,6 +1,6 @@
 @echo off
 chcp 65001 > nul
-title PROMPTFY v2.0
+title PROMPTFY v1.0
 
 echo ========================================
 echo            PROMPTFY - v1.0

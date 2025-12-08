@@ -1,12 +1,12 @@
 ![ICEI](images/icei-pucminas.png)
 
-# 🎶🔊 Promptify - Player de música no terminal
+# 🎶🔊 Promptify - Mini-player de Terminal
 ---
 ## Alunos integrantes da equipe
 
 * [Alexandre Versiani Raposo](https://github.com/LexVRaps)
 * [Guilherme Meireles Farias)](https://github.com/guimfarias)
-* [Marcos Vinicius dos Santos)](https://github.com/marcosvisa)
+* [Marcos Vinicius dos Santos Pereira)](https://github.com/marcosvisa)
 * [Nome completo do aluno 5 (com link para Github)](https://github.com/aluno5)
 
 ## Professor responsável
@@ -15,10 +15,7 @@
 
 ## Gerenciamento do Projeto
 
-......  COLOQUE AQUI O SEU TEXTO (OPCIONAL) ......
-
-> Adicione aqui informações sobre o projeto que será gerenciado. 
-> Indique informações importantes sobre o projeto.
+Desenvolver e lançar no mercado uma plataforma de streaming musical em ambiente de linha de comando (CLI), voltada para usuários que buscam uma solução leve, sem interface gráfica, com foco em desempenho, praticidade e integração em ambientes técnicos.
 
 Fases do Gerenciamento do Projeto:
 1. [Iniciação](docs/01-iniciacao)
