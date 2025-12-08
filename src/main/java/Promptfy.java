@@ -62,7 +62,7 @@ public class Promptfy {
     }
     
     private static void criarScriptPlayback() throws Exception {
-        // APENAS play_music.bat é necessário para o funcionamento
+        
         File batFile = new File("play_music.bat");
         if (!batFile.exists()) {
             try (PrintWriter writer = new PrintWriter(batFile)) {

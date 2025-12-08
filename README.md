@@ -6,7 +6,7 @@
 
 * [Alexandre Versiani Raposo](https://github.com/LexVRaps)
 * [Guilherme Meireles Farias)](https://github.com/guimfarias)
-* [Marcos Vinicius dos Santos Pereira)](https://github.com/marcosvisa)
+* [Marcos Vinicius dos Santos Pereira](https://github.com/marcosvisa)
 * [Nome completo do aluno 5 (com link para Github)](https://github.com/aluno5)
 
 ## Professor responsável
@@ -24,8 +24,20 @@ Fases do Gerenciamento do Projeto:
 4. [Monitoramento](docs/04-monitoramento)
 5. [Encerramento](docs/05-encerramento)
 
+## ⚙ Como Funciona 
 
-## Informações Adicionais
+O usuário, através do prompt de comando, digita a música/artista desejado e o algorítimo, através da ferramenta yt-dlp, extrai o audio do primeiro resuldado de busca e força o VLC a tocar.
+
+
+Exemplo: ytsearch1:"musica"
+Busca no YouTube como se fosse um usuário
+
+Pega o primeiro resultado (ytsearch1:)
+
+Extrai o link direto do áudio
+
+Envia para o VLC tocar
+
 
 ## 💻 Requisitos para Executar Sistema 
 
