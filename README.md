@@ -43,7 +43,7 @@ Envia para o VLC tocar
 
 * Java JDK 8 ou superior
 * VLC Instaldo 
-* Maven Intalado 
+* Maven Instalado 
 ---
 
 ### ▶️ Executar Primeira Vez:
