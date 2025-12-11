@@ -42,7 +42,7 @@ Envia para o VLC tocar
 ## 💻 Requisitos para Executar Sistema 
 
 * Java JDK 8 ou superior
-* VLC Instaldo 
+* VLC Instalado 
 * Maven Instalado 
 ---
 
