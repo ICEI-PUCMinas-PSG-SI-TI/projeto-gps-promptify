@@ -6,6 +6,8 @@
 
 import java.io.*;
 import java.net.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Promptfy {
@@ -162,41 +164,43 @@ public class Promptfy {
     
     private static void tocarMusica(String query) {
         try {
-            System.out.println("\n🔍 Buscando: \"" + query + "\"...");
-            System.out.println("▶️  Iniciando VLC...");
-            
-            // Comando com VLC VISÍVEL
-            String[] comando = {
-                "cmd.exe", "/c",
-                "yt-dlp.exe", "ytsearch1:\"" + query + "\"",
-                "-f", "bestaudio",
-                "-o", "-",
-                "--no-playlist",
-                "--quiet",
-                "|",
-                "\"C:\\Program Files\\VideoLAN\\VLC\\vlc.exe\"", "-",
-                "--qt-minimal-view",    // Janela minimalista visível
-                "--play-and-exit",
-                "--no-video",
-                "--meta-title", "PROMPTFY: " + query  // Título na janela
-            };
-            
-            ProcessBuilder pb = new ProcessBuilder(comando);
-            vlcProcess = pb.start();
-            
-            // Thread para monitorar quando VLC fecha
-            new Thread(() -> {
-                try {
-                    vlcProcess.waitFor();
-                    System.out.println("\n> VLC fechado. Pronto para próxima música.");
-                } catch (InterruptedException e) {
-                    // Processo interrompido
-                }
-            }).start();
-            
-        } catch (Exception e) {
-            System.err.println("\n> Erro: " + e.getMessage());
-            System.out.println("> Verifique conexão com internet");
+        System.out.println("\n🔍 Buscando: \"" + query + "\"...");
+
+        ProcessBuilder pb = new ProcessBuilder(
+            "yt-dlp.exe", "ytsearch1:" + query, "-f", "bestaudio", "--get-url"
+        );
+        Process p = pb.start();
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
+        String url = reader.readLine();
+        p.waitFor();
+
+        if (url == null || url.isEmpty()) {
+            System.out.println("⚠️ Nenhum resultado encontrado!");
+            return;
+        }
+
+        System.out.println("▶️ Iniciando VLC com: " + url);
+
+        ProcessBuilder playPb = new ProcessBuilder(
+            "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe",
+            url,
+            "--qt-minimal-view",
+            "--play-and-exit",
+            "--no-video",
+            "--meta-title", "PROMPTFY: " + query
+        );
+        vlcProcess = playPb.start();
+        new Thread(() -> {
+            try {
+                vlcProcess.waitFor();
+                System.out.println("\n> VLC fechado. Pronto para próxima música.");
+            } catch (InterruptedException e) {
+            }
+        }).start();
+        }catch (Exception e) {
+        System.err.println("\n> Erro: " + e.getMessage());
+        System.out.println("> Verifique se o VLC está instalado e o caminho está correto.");
         }
     }
     
