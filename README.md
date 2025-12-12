@@ -61,5 +61,5 @@ mvn clean compile
 ### ▶ Executar o sistema:
 
 ```powershell
-mvn exec:java69
+mvn exec:java
 ```
