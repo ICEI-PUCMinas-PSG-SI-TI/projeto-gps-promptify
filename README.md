@@ -49,14 +49,14 @@ Envia para o VLC tocar
 ### ▶️ Executar Primeira Vez:
 
 ```powershell
+chcp 65001
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 .\executar.bat
 ```
 
 ### 📌 Compilar o projeto (Windows PowerShell):
 
 ```powershell
-chcp 65001
-[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 mvn clean compile
 ```
 
