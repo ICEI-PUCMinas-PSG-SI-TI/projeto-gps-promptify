@@ -55,6 +55,8 @@ Envia para o VLC tocar
 ### 📌 Compilar o projeto (Windows PowerShell):
 
 ```powershell
+chcp 65001
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 mvn clean compile
 ```
 
