@@ -5,9 +5,12 @@
 ## Alunos integrantes da equipe
 
 * [Alexandre Versiani Raposo](https://github.com/LexVRaps)
-* [Guilherme Meireles Farias)](https://github.com/guimfarias)
+* [Guilherme Meireles Farias](https://github.com/guimfarias)
 * [Marcos Vinicius dos Santos Pereira](https://github.com/marcosvisa)
-* [Nome completo do aluno 5 (com link para Github)](https://github.com/aluno5)
+* Fernando Augusto Palhares Barbosa
+* Eduardo Utsch Golçalves
+* João Victor Wanderley Lamon
+
 
 ## Professor responsável
 
