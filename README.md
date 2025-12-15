@@ -37,12 +37,12 @@ Busca no YouTube como se fosse um usuário
 
 Pega o primeiro resultado (ytsearch1:)
 
-Extrai o link direto do áudio
+Extrai o link do vídeo
 
 Envia para o VLC tocar
 
 
-## 💻 Requisitos para Executar Sistema 
+## 💻 Requisitos para executar o sistema 
 
 * Java JDK 8 ou superior
 * VLC Instalado 

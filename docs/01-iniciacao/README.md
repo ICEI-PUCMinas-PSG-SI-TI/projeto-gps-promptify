@@ -41,42 +41,44 @@
 
 ## Problema
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Atualmente, os usuários que desejam ouvir músicas específicas precisam alternar entre diferentes aplicativos: primeiro abrir um navegador para pesquisar no YouTube ou Spotify, depois copiar o link e finalmente abrir em um player de música. Este fluxo fragmentado interrompe a produtividade, especialmente para desenvolvedores, estudantes e profissionais que trabalham frequentemente no terminal e preferem manter o foco em um único ambiente de trabalho.
 
-> Problem corresponde a uma lacuna a ser preenchida, uma necessidade a ser atendida, ou uma dificuldade a ser superada.
-> A definição precisa do problema ajuda a orientar as atividades do projeto, direcionando os esforços em sua solução.
-> Seu entendimento facilita a comunicação eficaz entre os membros da equipe e as partes interessadas, estabelecendo uma base comum para a colaboração.
-> Nesta seção, deve ser descrito apenas o problema e seu contexto.
-> Soluções para o problema devem ser descritas na seção correspondente.
+A ausência de uma solução integrada que permita buscar e reproduzir músicas diretamente do terminal resulta em perda de tempo, quebra de concentração e experiência do usuário não otimizada. Além disso, muitas soluções existentes dependem de APIs complexas, assinaturas pagas ou interfaces gráficas pesadas, tornando-as inadequadas para uso em ambientes de desenvolvimento ou sistemas com recursos limitados.
 
 ## Objetivos
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Aqui você deve descrever os objetivos do trabalho.
-> Apresente um Objetivo Geral, sintetizado em uma única frase.
-> Apresente também 3 ou 4 objetivos específicos (sub-produtos do sistema ou objetivos extras que podem ser alcançados pela construção do software).
-> 
-> **Link Útil**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Desenvolver um aplicativo de linha de comando em Java que integre busca no YouTube e reprodução de áudio, proporcionando uma experiência musical contínua e não intrusiva para usuários de terminal.
 
 
 ## Justificativa
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Aqui você deve descrever os benefícios esperados pela construção do projeto.
-> As justificativas do projeto explicam as razões e a necessidade da iniciativa.
-> Elas demonstram como o projeto atende a uma demanda específica, resolve um problema ou aproveita uma oportunidade identificada.
-> Além disso, definem os benefícios esperados e o impacto previsto para a organização ou a comunidade. 
+A construção do PROMPTFY se justifica pela necessidade premente de otimizar o fluxo de trabalho de profissionais técnicos que passam a maior parte do tempo em ambientes de terminal. Em um cenário onde a produtividade é diretamente impactada pelo número de interrupções e trocas de contexto, uma ferramenta integrada de reprodução musical no terminal representa uma melhoria significativa na experiência do usuário. 
 
 ## Critérios de Sucesso
 
-......  COLOQUE AQUI O SEU TEXTO ......
+**Funcionais:**
 
-> Os critérios de sucesso indicam uma forma avaliar o êxito do trabalho e analisar se o projeto realmente alcançou os objetivos estabelecidos. 
-> Esses critérios geralmente abrangem diversas dimensões, incluindo a entrega dentro do prazo e orçamento estipulados, a satisfação do cliente, a qualidade do produto ou serviço final, e a eficiência na utilização de recursos. 
-> Além disso, a capacidade de atender aos requisitos e expectativas das partes interessadas, bem como a gestão eficaz de riscos, são considerados aspectos importantes para determinar o sucesso de um projeto. 
+Busca e reprodução: O sistema encontra e toca músicas do YouTube a partir de comandos no terminal
+Controle básico: Usuário pode parar reprodução e buscar nova música sem reiniciar o programa
+Configuração mínima: Setup completo em ≤15 minutos com Java, Maven e VLC instalados
+
+**Técnicos:**
+
+Performance: Início da reprodução em ≤10 segundos após comando
+Estabilidade: Sessões de 1+ hora sem crashes ou vazamento de memória
+Compatibilidade: Funciona com Java 8+ e Windows 10/11
+
+**Usabilidade:**
+
+Interface clara: Mensagens compreensíveis e feedback durante operações
+Documentação: README com instruções passo a passo e solução de problemas comuns
+Adoção: 80% dos colegas conseguem usar sem assistência direta
+
+**Qualidade:**
+
+Código organizado: Estrutura lógica, comentada e com tratamento de erros
+Build reprodutível: Compilação e execução via scripts simples
+Entrega completa: Código fonte + documentação + exemplos de uso
 
 # Partes Interessadas
 
